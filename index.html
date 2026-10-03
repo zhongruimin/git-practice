@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>zhongruimin · 我的第一个 GitHub Pages</title>
+<style>
+  :root {
+    --ink: #1d1d1f;
+    --ink-soft: #6e6e73;
+    --line: #e5e5e7;
+    --bg: #fbfbfd;
+    --accent: #2f6fed;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 64px 24px 80px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; }
+  .badge {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid rgba(47,111,237,.28);
+    border-radius: 999px;
+    padding: 4px 12px;
+    margin-bottom: 22px;
+  }
+  h1 {
+    font-size: 38px;
+    line-height: 1.25;
+    margin: 0 0 14px;
+    letter-spacing: -.02em;
+  }
+  .lead {
+    font-size: 17px;
+    color: var(--ink-soft);
+    margin: 0 0 40px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin-bottom: 16px;
+  }
+  .card h2 {
+    font-size: 15px;
+    margin: 0 0 12px;
+    letter-spacing: .01em;
+  }
+  ul { margin: 0; padding-left: 20px; color: var(--ink-soft); font-size: 15px; }
+  li { margin-bottom: 6px; }
+  li:last-child { margin-bottom: 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 13px;
+    background: #f2f2f5;
+    border-radius: 5px;
+    padding: 2px 6px;
+    color: var(--ink);
+  }
+  footer {
+    margin-top: 44px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    font-size: 14px;
+    color: var(--ink-soft);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="badge">GitHub Pages · 已上线</span>
+
+    <h1>你好，我是 zhongruimin</h1>
+    <p class="lead">
+      这张网页就放在我自己的 Git 仓库里。没有买服务器，没有买域名，也没有碰过一行后端代码 ——
+      它只是仓库里的一个 <code>index.html</code> 文件，GitHub 帮我把它变成了网址。
+    </p>
+
+    <div class="card">
+      <h2>它是怎么跑到这里的</h2>
+      <ul>
+        <li>本地建一个仓库，写一个 <code>index.html</code></li>
+        <li>推到 GitHub</li>
+        <li>在仓库的 <code>Settings → Pages</code> 里把发布来源指向这个分支</li>
+        <li>等一两分钟，网址就活了</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>以后改内容只要三行</h2>
+      <ul>
+        <li><code>git add .</code>　把改动放进暂存区</li>
+        <li><code>git commit -m "说明"</code>　拍一张快照</li>
+        <li><code>git push</code>　推上去，网站自动更新</li>
+      </ul>
+    </div>
+
+    <footer>
+      <span>源码：<a href="https://github.com/zhongruimin/git-practice">github.com/zhongruimin/git-practice</a></span>
+    </footer>
+  </div>
+</body>
+</html>
